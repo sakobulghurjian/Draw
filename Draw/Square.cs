@@ -8,11 +8,15 @@ namespace Draw
 {
     class Square : Rectangle
     {
-        internal int Length;
+       private int Length;
 
-        public Square(int  Height=5, int Weight=5)
+        public Square()
         {
-            if (Height==Weight)
+            Length = 5;
+        }
+        public Square(byte Weight,byte Height)
+        {
+            if (Height == Weight)
             {
                 Length = Height;
             }
@@ -21,6 +25,20 @@ namespace Draw
                 Length = (Height + Weight) / 2;
             }
         }
+        public override void Print()
+        {
+      
+            for (int i = 0; i < Length; i++)
+            {
+                for (int j = 0; j < Length; j++)
+                {
+                    Console.Write(model + " ");
+                }
+                Console.WriteLine();
 
+            }
+        }
     }
+
+    
 }

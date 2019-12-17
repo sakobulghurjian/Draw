@@ -8,6 +8,11 @@ namespace Draw
 {
     class DoubleArrow : Arrow
     {
+        public override void Print()
+        {
+            Console.Write("<");
+            base.Print();
+        }
 
     }
 }

@@ -8,5 +8,11 @@ namespace Draw
 {
     class Shape
     {
+         protected string model="*";
+
+        public virtual void Print()
+        {
+            Console.Write(" ");
+        }
     }
 }

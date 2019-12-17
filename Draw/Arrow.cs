@@ -8,13 +8,11 @@ namespace Draw
 {
     class Arrow : Line
     {
-        public Arrow(string model)
+        public override void Print()
         {
+            base.Print();
+            Console.Write(">");
 
-        }
-        public Arrow()
-        {
-            string model = "*";
         }
     }
     
